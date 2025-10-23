@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
-  <body>
+  <body class="bg-gray-100">
     <!-- video -->
     <video
       src="/src/assets/images/welcome.mp4"
@@ -22,9 +22,33 @@
         <nav>
           <ul class="flex flex-row gap-5 text-gray-500">
             <li>BUSY bar</li>
-            <li class="border-b border-gray-300 transition-all duration-300 hover:border-purple-500 hover:scale-105 group"><a href="#" class="text-lg hover:font-medium text-gray-700 group-hover:text-purple-600 transition-all duration-300">Boutique</a></li>
-            <li class="border-b border-gray-300 transition-all duration-300 hover:border-emerald-500 hover:scale-105 group"><a href="#" class="text-lg hover:font-medium text-gray-700 group-hover:text-emerald-600 transition-all duration-300">Telechargements</a></li>
-            <li class="border-b border-gray-300 transition-all duration-300 hover:border-cyan-500 hover:scale-105 group"><a href="#" class="text-lg hover:font-medium text-gray-700 group-hover:text-cyan-600 transition-all duration-300">Blog</a></li>
+            <li
+              class="border-b border-gray-300 transition-all duration-300 hover:border-purple-500 hover:scale-105 group"
+            >
+              <a
+                href="#"
+                class="text-lg hover:font-medium text-gray-700 group-hover:text-purple-600 transition-all duration-300"
+                >Boutique</a
+              >
+            </li>
+            <li
+              class="border-b border-gray-300 transition-all duration-300 hover:border-emerald-500 hover:scale-105 group"
+            >
+              <a
+                href="#"
+                class="text-lg hover:font-medium text-gray-700 group-hover:text-emerald-600 transition-all duration-300"
+                >Telechargements</a
+              >
+            </li>
+            <li
+              class="border-b border-gray-300 transition-all duration-300 hover:border-cyan-500 hover:scale-105 group"
+            >
+              <a
+                href="#"
+                class="text-lg hover:font-medium text-gray-700 group-hover:text-cyan-600 transition-all duration-300"
+                >Blog</a
+              >
+            </li>
           </ul>
         </nav>
 
@@ -36,9 +60,7 @@
         />
       </header>
 
-      <section
-        class="flex mx-auto max-w-[550px] flex-col mt-[35vh] mb-6 grow"
-      >
+      <section class="flex mx-auto max-w-[550px] flex-col mt-[35vh] mb-6 grow">
         <p class="text-xl">
           <span class="font-bold">BUSY bar</span> est un dispositif multi-outil
           de productivité avec un écran LED pixelisé. Minuteur de concentration
@@ -47,6 +69,7 @@
         <button
           class="capitalize bg-orange-500 py-4 mx-auto block mt-10 text-white px-14 rounded-lg text-lg hover:bg-black hover:text-white duration-300 cursor-pointer"
         >
+          <!-- everytime the bg color for the button is changed, color doesn't appear only orange works -->
           acheter
         </button>
       </section>
@@ -54,60 +77,99 @@
       <section class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8">
         <!-- feature number 1 -->
         <div class="flex items-start gap-3 text-slate-600">
-          <img src="./assets/images/feature-one.svg" alt="feature_1" class="w-14"/>
+          <img
+            src="./assets/images/feature-one.svg"
+            alt="feature_1"
+            class="w-14"
+          />
           <div>
-          <h3 class="text-lg font-medium">Outil de productivité</h3>
-          <div class="text-sm">
-            Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Doloremque totam libero adipisci nesciunt sint
-            veniam, ipsam esse repudiandae?
-          </div>
+            <h3 class="text-lg font-medium">Outil de productivité</h3>
+            <div class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque totam libero adipisci nesciunt sint veniam, ipsam esse
+              repudiandae?
+            </div>
           </div>
         </div>
-         
+
         <!-- feature number 2 -->
-         <div class="flex items-start gap-3 text-slate-600">
-          <img src="./assets/images/feature-two.svg" alt="feature_2" class="w-14"/>
+        <div class="flex items-start gap-3 text-slate-600">
+          <img
+            src="./assets/images/feature-two.svg"
+            alt="feature_2"
+            class="w-14"
+          />
           <div>
-          <h3 class="text-lg font-medium">Application et intégration</h3>
-          <div class="text-sm">
-            Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Doloremque totam libero adipisci nesciunt sint
-            veniam, ipsam esse repudiandae?
-          </div>
+            <h3 class="text-lg font-medium">Application et intégration</h3>
+            <div class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque totam libero adipisci nesciunt sint veniam, ipsam esse
+              repudiandae?
+            </div>
           </div>
         </div>
 
         <!-- feature number 3 -->
-         <div class="flex items-start gap-3 text-slate-600">
-          <img src="./assets/images/feature-three.svg" alt="feature_3" class="w-14"/>
+        <div class="flex items-start gap-3 text-slate-600">
+          <img
+            src="./assets/images/feature-three.svg"
+            alt="feature_3"
+            class="w-14"
+          />
           <div>
-          <h3 class="text-lg font-medium">Support maison connecté</h3>
-          <div class="text-sm">
-            Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Doloremque totam libero adipisci nesciunt sint
-            veniam, ipsam esse repudiandae?
-          </div>
+            <h3 class="text-lg font-medium">Support maison connecté</h3>
+            <div class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque totam libero adipisci nesciunt sint veniam, ipsam esse
+              repudiandae?
+            </div>
           </div>
         </div>
-      
+
         <!-- feature number 4 -->
         <div class="flex items-start gap-3 text-slate-600">
-          <img src="./assets/images/feature-four.svg" alt="feature_4" class="w-14"/>
+          <img
+            src="./assets/images/feature-four.svg"
+            alt="feature_4"
+            class="w-14"
+          />
           <div>
-          <h3 class="text-lg font-medium">Outil de productivité</h3>
-          <div class="text-sm">
-            Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Doloremque totam libero adipisci nesciunt sint
-            veniam, ipsam esse repudiandae?
-          </div>
+            <h3 class="text-lg font-medium">Outil de productivité</h3>
+            <div class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque totam libero adipisci nesciunt sint veniam, ipsam esse
+              repudiandae?
+            </div>
           </div>
         </div>
-      
       </section>
     </main>
 
-<!-- <ul class="space-y-3 max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+    <section class="flex flex-row h-screen">
+      <!-- Description -->
+      <div class="w-1/2 flex items-center bg-white">
+        <div>
+          <h2 class="text-5xl">Montrez que vous ètes occupé</h2>
+          <p class="text-xl">
+            Empechez les autres d'interrompre votre concentration profonde.
+            L'écran affiche que vous ètes occupé et quand vous serez à nouveau
+            disponible.
+          </p>
+        </div>
+      </div>
+
+      <!-- video busy -->
+      <div class="w-1/2 relative">
+        <video
+          src="/src/assets/images/busy.mp4"
+          autoplay
+          loop
+          muted
+          class="absolute -z-10 w-full h-screen object-cover"
+        ></video>
+      </div>
+    </section>
+    <!-- <ul class="space-y-3 max-w-md mx-auto bg-white p-6 rounded-lg shadow">
     <li class="pb-3 border-b-2 border-gray-200 transition-all duration-500 ease-out hover:border-red-500 hover:scale-[1.02] hover:pl-4 hover:bg-red-50 group transform">
         <a href="#" class="block text-lg font-medium text-gray-800 group-hover:text-red-700 transition-all duration-500 group-hover:font-semibold">Élément 1</a>
     </li>
@@ -118,6 +180,5 @@
         <a href="#" class="block text-lg font-medium text-gray-800 group-hover:text-green-700 transition-all duration-500 group-hover:font-semibold">Élément 3</a>
     </li>
 </ul> -->
-
   </body>
 </html>
