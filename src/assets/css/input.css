@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap');
 
+
+/* modifier les couleurs ou les breakpoints ou mème des spacings ou du text bref out ce que tu veux personaliser */
+@theme {
+    --color-orange-5O0: blue;
+    --font-playwrite: 'Playwrite', cursive;
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
